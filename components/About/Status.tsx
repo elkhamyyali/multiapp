@@ -2,7 +2,6 @@ import React from 'react'
 
 const Status = () => {
   return (
-   
     <div className="w-[30rem] ">
       <div className="mx-auto max-w-3xl">
         <header className="text-center">
@@ -21,7 +20,9 @@ const Status = () => {
               />
 
               <div>
-                <h3 className="text-sm text-gray-900 dark:text-white">Basic Tee 6-Pack</h3>
+                <h3 className="text-sm text-gray-900 dark:text-white">
+                  Basic Tee 6-Pack
+                </h3>
 
                 <dl className="mt-0.5 space-y-px text-[10px] text-gray-600 dark:text-white">
                   <div>
@@ -38,10 +39,7 @@ const Status = () => {
 
               <div className="flex flex-1 items-center justify-end gap-2">
                 <form>
-                  <label for="Line1Qty" className="sr-only">
-                    {" "}
-                    Quantity{" "}
-                  </label>
+                  <label className="sr-only"> Quantity </label>
 
                   <input
                     type="number"
@@ -80,7 +78,9 @@ const Status = () => {
               />
 
               <div>
-                <h3 className="text-sm text-gray-900 dark:text-white">Basic Tee 6-Pack</h3>
+                <h3 className="text-sm text-gray-900 dark:text-white">
+                  Basic Tee 6-Pack
+                </h3>
 
                 <dl className="mt-0.5 space-y-px text-[10px] text-gray-600 dark:text-white">
                   <div>
@@ -97,10 +97,7 @@ const Status = () => {
 
               <div className="flex flex-1 items-center justify-end gap-2">
                 <form>
-                  <label for="Line1Qty" className="sr-only">
-                    {" "}
-                    Quantity{" "}
-                  </label>
+                  <label className="sr-only"> Quantity </label>
 
                   <input
                     type="number"
@@ -139,7 +136,9 @@ const Status = () => {
               />
 
               <div>
-                <h3 className="text-sm text-gray-900 dark:text-white">Basic Tee 6-Pack</h3>
+                <h3 className="text-sm text-gray-900 dark:text-white">
+                  Basic Tee 6-Pack
+                </h3>
 
                 <dl className="mt-0.5 space-y-px text-[10px] text-gray-600 dark:text-white">
                   <div>
@@ -156,10 +155,7 @@ const Status = () => {
 
               <div className="flex flex-1 items-center justify-end gap-2">
                 <form>
-                  <label for="Line1Qty" className="sr-only">
-                    {" "}
-                    Quantity{" "}
-                  </label>
+                  <label className="sr-only"> Quantity </label>
 
                   <input
                     type="number"
@@ -190,8 +186,6 @@ const Status = () => {
                 </button>
               </div>
             </li>
-
-            
           </ul>
 
           <div className="mt-8 flex justify-end border-t border-gray-100 pt-8">
@@ -254,8 +248,7 @@ const Status = () => {
         </div>
       </div>
     </div>
-  
-  )
+  );
 }
 
 export default Status

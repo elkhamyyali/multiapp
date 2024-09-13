@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { ReactNode } from "react";
 import {
   Card,
   CardBody,
@@ -15,11 +15,11 @@ import {
 } from "@heroicons/react/24/solid";
 import { PlusIcon } from "@heroicons/react/24/outline";
 
+// Define the interface for the BillingCard component
 interface BillingCardPropsType {
   title: string;
-  options: string[];
-  action: string;
-  icon: string;
+  options: { [key: string]: string }; // options should be an object with key-value pairs
+  icon: ReactNode; // icon is ReactNode because you're passing JSX
   detail: string;
 }
 
@@ -31,7 +31,7 @@ function BillingCard({ title, options, icon, detail }: BillingCardPropsType) {
     >
       <div className="mb-4 flex items-start justify-between">
         <div className="flex items-center gap-3">
-          <div className="border border-gray-200 p-2.5 rounded-lg ">{icon}</div>
+          <div className="border border-gray-200 p-2.5 rounded-lg">{icon}</div>
           <div>
             <Typography
               variant="small"
@@ -60,7 +60,7 @@ function BillingCard({ title, options, icon, detail }: BillingCardPropsType) {
           >
             <TrashIcon className="h-4 w-4 text-red-500" />
             <Typography className="!font-semibold text-xs text-red-500 md:block hidden">
-              delete
+              Delete
             </Typography>
           </Button>
         </div>
@@ -68,7 +68,7 @@ function BillingCard({ title, options, icon, detail }: BillingCardPropsType) {
       <div>
         {options && (
           <div>
-            {Object.keys(options).map((label) => (
+            {Object.entries(options).map(([label, value]) => (
               <div key={label} className="flex gap-1">
                 <Typography className="mb-1 text-xs !font-medium text-gray-600 dark:text-white">
                   {label}:
@@ -77,7 +77,7 @@ function BillingCard({ title, options, icon, detail }: BillingCardPropsType) {
                   className="text-xs !font-bold dark:text-white"
                   color="blue-gray"
                 >
-                  {options[label]}
+                  {value}
                 </Typography>
               </div>
             ))}
@@ -88,10 +88,11 @@ function BillingCard({ title, options, icon, detail }: BillingCardPropsType) {
   );
 }
 
+// BillingCard data, containing icons and details
 const billingCardData = [
   {
     icon: <BriefcaseIcon className="h-6 w-6 text-gray-900" />,
-    title: "Burrito Vikingss",
+    title: "Burrito Vikings",
     detail: "Company",
     options: {
       Contact: "Emma Roberts",
@@ -149,11 +150,11 @@ function Billing() {
             className="flex justify-center gap-3 md:max-w-fit w-full ml-auto dark:text-white"
           >
             <PlusIcon strokeWidth={3} className="h-4 w-4" />
-            add new card
+            Add New Card
           </Button>
         </div>
       </CardHeader>
-      <CardBody className="flex flex-col gap-4 !p-4 ">
+      <CardBody className="flex flex-col gap-4 !p-4">
         {billingCardData.map((props, key) => (
           <BillingCard key={key} {...props} />
         ))}
