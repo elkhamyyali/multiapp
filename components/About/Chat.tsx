@@ -24,10 +24,10 @@ const Chat = () => {
             </p>
             <ul className="list-disc list-outside space-y-1.5 ps-3.5">
               <li className="text-sm text-gray-800 dark:text-white">
-                What's Preline UI?
+                Whats Preline UI?
               </li>
               <li className="text-sm text-gray-800 dark:text-white">
-                How many Starter Pages &amp; Examples are there?
+                How many Starter Pages Examples are there?
               </li>
               <li className="text-sm text-gray-800 dark:text-white">
                 Is there a PRO version?
@@ -63,7 +63,7 @@ const Chat = () => {
         <div className="inline-flex flex-col justify-end">
           {/* Card */}
           <div className="inline-block bg-blue-600 rounded-2xl p-4 shadow-sm">
-            <p className="text-sm text-white">what's preline ui?</p>
+            <p className="text-sm text-white">whats preline ui?</p>
           </div>
           {/* End Card */}
           <span className="mt-1.5 ms-auto flex items-center gap-x-1 text-xs text-gray-500 dark:text-neutral-500">
@@ -107,7 +107,7 @@ const Chat = () => {
           </p>
           <div className="space-y-1.5">
             <p className="text-sm text-gray-800 dark:text-white">
-              Here're some links to get started
+              Herere some links to get started
             </p>
             <ul>
               <li>

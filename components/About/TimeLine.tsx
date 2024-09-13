@@ -46,7 +46,7 @@ const TimeLine = () => {
             <line x1={16} x2={8} y1={17} y2={17} />
             <line x1={10} x2={8} y1={9} y2={9} />
           </svg>
-          Created "Preline in React" task
+          Created Preline in React task
         </h3>
         <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">
           Find more detailed insctructions here.
@@ -111,7 +111,7 @@ const TimeLine = () => {
       {/* Right Content */}
       <div className="grow pt-0.5 pb-8">
         <h3 className="flex gap-x-1.5 font-semibold text-gray-800 dark:text-white">
-          Marked "Install Charts" completed
+          Marked nstall Charts completed
         </h3>
         <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">
           Finally! You can check it out here.
