@@ -1,3 +1,4 @@
+"use client";
 import TimeLine from "@/components/About/TimeLine";
 import Calendar from "@/components/About/Calendar";
 import { title } from "@/components/primitives";

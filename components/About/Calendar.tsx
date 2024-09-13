@@ -1,4 +1,5 @@
-import React from 'react'
+"use client";
+import React from "react";
 
 const Calendar = () => {
   return (
@@ -520,6 +521,6 @@ const Calendar = () => {
       {/* End Datepicker */}
     </>
   );
-}
+};
 
-export default Calendar
+export default Calendar;

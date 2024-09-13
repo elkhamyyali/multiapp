@@ -1,4 +1,6 @@
-import React from 'react'
+"use client";
+
+import React from "react";
 
 const Status = () => {
   return (
@@ -249,6 +251,6 @@ const Status = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Status
+export default Status;

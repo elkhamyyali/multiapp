@@ -1,3 +1,4 @@
+"use client";
 import { Card } from "flowbite-react";
 import Image from "next/image";
 
@@ -34,8 +35,13 @@ export default function Team() {
   return (
     <Card className="w-[25rem] bg-white dark:bg-neutral-950 border-none">
       <div className="mb-4 flex items-center justify-between">
-        <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">Latest Customers</h5>
-        <a href="#" className="text-sm font-medium text-cyan-600 hover:underline dark:text-cyan-500">
+        <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">
+          Latest Customers
+        </h5>
+        <a
+          href="#"
+          className="text-sm font-medium text-cyan-600 hover:underline dark:text-cyan-500"
+        >
           View all
         </a>
       </div>
@@ -49,17 +55,21 @@ export default function Team() {
                   {/* Use the src attribute from Unsplash for each image */}
                   <img
                     alt={`${member.name} image`}
-                    
                     src={`https://source.unsplash.com/random/${index + 1}`}
-                  
                     className="rounded-full w-10 h-10"
                   />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <p className="truncate text-sm font-medium text-gray-900 dark:text-white">{member.name}</p>
-                  <p className="truncate text-sm text-gray-500 dark:text-gray-400">{member.email}</p>
+                  <p className="truncate text-sm font-medium text-gray-900 dark:text-white">
+                    {member.name}
+                  </p>
+                  <p className="truncate text-sm text-gray-500 dark:text-gray-400">
+                    {member.email}
+                  </p>
                 </div>
-                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">{member.amount}</div>
+                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                  {member.amount}
+                </div>
               </div>
             </li>
           ))}
