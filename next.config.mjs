@@ -5,14 +5,9 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   typescript: {
-    ignoreBuildErrors: true,
-  },
-
-  output: "export",
-
-  images: {
-    unoptimized: true,
+    // Ignore typescript errors in specific file or files
+    ignoreBuildErrors: true, // Ignore TypeScript errors during build
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
